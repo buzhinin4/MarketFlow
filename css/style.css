@@ -30,9 +30,17 @@
 }
 
 body {
-  background-color: var(--light-gray);
-  color: var(--text);
   line-height: 1.6;
+  --primary: #2e5bff;
+  --dark-primary: #1a1f36;
+  --secondary: #ff6d2e;
+  --dark: white;
+  --white: #1e1e1e;
+  --light-gray: #a9a9a9;
+  --gray: #e4e8eb;
+  --text: #e9ecef;
+  background-color: #121212;
+  color: var(--text);
 }
 
 .container {
