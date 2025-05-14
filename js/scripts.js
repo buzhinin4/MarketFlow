@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const themeToggles = document.getElementsByClassName("theme-toggle");
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
   const currentTheme = localStorage.getItem("theme");
-  if (currentTheme === "dark" || (!currentTheme && prefersDarkScheme.matches)) {
+  if (currentTheme === "dark" || !currentTheme) {
     document.body.classList.add("dark-theme");
   }
 
