@@ -1,5 +1,3 @@
-// scripts.js
-
 const products = [
   {
     name: "Смартфон Xiaomi Redmi Note 12 Pro",
@@ -60,14 +58,12 @@ const products = [
   },
 ];
 
-// Function to filter products by price and marketplace
 function filterProducts() {
   const priceFilter = document.getElementById("price").value;
   const marketplaceFilter = document.getElementById("marketplace").value;
 
   let filteredProducts = products;
 
-  // Price filtering
   if (priceFilter !== "all") {
     const priceRanges = {
       low: [0, 5000],
@@ -80,7 +76,6 @@ function filterProducts() {
     );
   }
 
-  // Marketplace filtering
   if (marketplaceFilter !== "all") {
     filteredProducts = filteredProducts.filter(
       (product) => product.marketplace === marketplaceFilter
@@ -90,7 +85,6 @@ function filterProducts() {
   displayProducts(filteredProducts);
 }
 
-// Function to sort products
 function sortProducts(criteria) {
   let sortedProducts;
   switch (criteria) {
@@ -109,10 +103,9 @@ function sortProducts(criteria) {
   displayProducts(sortedProducts);
 }
 
-// Function to display products
 function displayProducts(products) {
   const productGrid = document.querySelector(".products-grid");
-  productGrid.innerHTML = ""; // Clear previous products
+  productGrid.innerHTML = "";
   products.forEach((product) => {
     const productCard = document.createElement("div");
     productCard.classList.add("product-card");
@@ -150,7 +143,6 @@ function displayProducts(products) {
   });
 }
 
-// Event listeners for filters and sorting
 document.getElementById("price").addEventListener("change", () => {
   filterProducts();
 });
@@ -159,8 +151,26 @@ document.getElementById("marketplace").addEventListener("change", () => {
 });
 document.getElementById("sort").addEventListener("change", (event) => {
   sortProducts(event.target.value);
-  filterProducts(); // Apply filters after sorting
+  filterProducts();
 });
 
-// Initial display of products
+const searchInput = document.querySelector(".search-input");
+const searchButton = document.querySelector(".search-btn");
+
+function handleSearch() {
+  const query = searchInput.value.toLowerCase();
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(query)
+  );
+  displayProducts(filteredProducts);
+}
+
+searchButton.addEventListener("click", handleSearch);
+
+searchInput.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    handleSearch();
+  }
+});
+
 displayProducts(products);
