@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой профиль - MarketFlow</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profileStyles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <div class="logo-icon">MF</div>
+          <div class="logo-text">Market<span>Flow</span></div>
+        </div>
+
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul class="nav-links">
+            <li><a href="main.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="orders.html">Заказы</a></li>
+            <li><a href="profile.html" class="active">Профиль</a></li>
+          </ul>
+
+          <div class="mobile-menu-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Переключить тему"
+            >
+              <svg
+                class="sun-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="moon-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="auth-buttons">
+              <button class="btn btn-outline btn-login">Войти</button>
+              <button class="btn btn-primary btn-register">Регистрация</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Переключить тему"
+          >
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <div class="auth-buttons">
+            <button class="btn btn-outline btn-login">Войти</button>
+            <button class="btn btn-primary btn-register">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="profile-page">
+      <div class="container">
+        <div class="profile-header">
+          <h1 class="page-title">Мой профиль</h1>
+        </div>
+
+        <div class="profile-content">
+          <div class="profile-sidebar">
+            <div class="profile-card">
+              <div class="profile-avatar">
+                <img src="imgs/Буж.jpg" alt="Аватар" />
+              </div>
+              <div class="profile-info">
+                <h2 class="profile-name">Иван Бужинский</h2>
+                <p class="profile-email">ivan.petrov@example.com</p>
+                <p class="profile-phone">+7 (123) 456-78-90</p>
+                <p class="profile-join">С нами с: 15 марта 2023</p>
+              </div>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat-item">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Заказов</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">87 450 ₽</div>
+                <div class="stat-label">Потрачено</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">4.8</div>
+                <div class="stat-label">Рейтинг</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-main">
+            <div class="profile-tabs">
+              <button class="tab-btn active" data-tab="personal">
+                Личные данные
+              </button>
+              <button class="tab-btn" data-tab="security">Безопасность</button>
+              <button class="tab-btn" data-tab="notifications">
+                Уведомления
+              </button>
+            </div>
+
+            <div class="tab-content active" data-tab="personal">
+              <form class="profile-form">
+                <div class="form-group">
+                  <label for="fullname">ФИО</label>
+                  <input
+                    type="text"
+                    id="fullname"
+                    value="Иван Петров"
+                    disabled
+                  />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      value="ivan.petrov@example.com"
+                      disabled
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      value="+71234567890"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="birthdate">Дата рождения</label>
+                  <input
+                    type="date"
+                    id="birthdate"
+                    value="1990-05-15"
+                    disabled
+                  />
+                </div>
+
+                <div class="form-actions">
+                  <button type="button" class="btn btn-outline edit-toggle">
+                    Редактировать
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary save-btn"
+                    disabled
+                  >
+                    Сохранить
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline cancel-btn"
+                    disabled
+                  >
+                    Отмена
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="tab-content" data-tab="security">
+              <form class="security-form">
+                <div class="form-group">
+                  <label for="current-password">Текущий пароль</label>
+                  <input
+                    type="password"
+                    id="current-password"
+                    placeholder="Введите текущий пароль"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="new-password">Новый пароль</label>
+                  <input
+                    type="password"
+                    id="new-password"
+                    placeholder="Введите новый пароль"
+                  />
+                  <div class="password-hint">
+                    Пароль должен содержать не менее 8 символов
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="confirm-password">Подтвердите пароль</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Повторите новый пароль"
+                  />
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">
+                    Изменить пароль
+                  </button>
+                </div>
+              </form>
+
+              <div class="security-devices">
+                <h3>Активные устройства</h3>
+                <div class="device-card">
+                  <div class="device-info">
+                    <div class="device-icon">📱</div>
+                    <div>
+                      <p class="device-name">iPhone 13 Pro</p>
+                      <p class="device-details">iOS 16.4 • Москва, Россия</p>
+                    </div>
+                  </div>
+                  <div class="device-actions">
+                    <button class="btn btn-outline">Выйти</button>
+                  </div>
+                </div>
+
+                <div class="device-card current">
+                  <div class="device-info">
+                    <div class="device-icon">💻</div>
+                    <div>
+                      <p class="device-name">MacBook Pro</p>
+                      <p class="device-details">
+                        macOS Ventura • Москва, Россия
+                      </p>
+                      <p class="device-current">Текущее устройство</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab="notifications">
+              <form class="notifications-form">
+                <h3>Настройки уведомлений</h3>
+
+                <div class="notification-group">
+                  <label class="notification-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                    <span class="notification-label">Email-уведомления</span>
+                  </label>
+                  <p class="notification-description">
+                    Получать уведомления о заказах и акциях на email
+                  </p>
+                </div>
+
+                <div class="notification-group">
+                  <label class="notification-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                    <span class="notification-label">SMS-уведомления</span>
+                  </label>
+                  <p class="notification-description">
+                    Получать SMS о статусе заказов
+                  </p>
+                </div>
+
+                <div class="notification-group">
+                  <label class="notification-switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                    <span class="notification-label">Push-уведомления</span>
+                  </label>
+                  <p class="notification-description">
+                    Получать уведомления в мобильном приложении
+                  </p>
+                </div>
+
+                <div class="notification-group">
+                  <label class="notification-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                    <span class="notification-label">Новости и акции</span>
+                  </label>
+                  <p class="notification-description">
+                    Получать информацию о скидках и специальных предложениях
+                  </p>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">
+                    Сохранить настройки
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">MF</div>
+            <div class="logo-text">Market<span>Flow</span></div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Контакты</a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2023 MarketFlow. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/profileScripts.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

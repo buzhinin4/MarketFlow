@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация - MarketFlow</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/registerStyles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <div class="logo-icon">MF</div>
+          <div class="logo-text">Market<span>Flow</span></div>
+        </div>
+
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul class="nav-links">
+            <li><a href="main.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="orders.html">Заказы</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+          </ul>
+
+          <div class="mobile-menu-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Переключить тему"
+            >
+              <svg
+                class="sun-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="moon-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="auth-buttons">
+              <button class="btn btn-outline btn-login">Войти</button>
+              <button class="btn btn-primary btn-register">Регистрация</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Переключить тему"
+          >
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <div class="auth-buttons">
+            <button class="btn btn-outline btn-login">Войти</button>
+            <button class="btn btn-primary btn-register">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="auth-page">
+      <div class="container">
+        <div class="auth-container">
+          <h1>Создайте аккаунт</h1>
+          <p class="auth-subtitle">
+            Зарегистрируйтесь, чтобы получить доступ ко всем возможностям
+            MarketFlow
+          </p>
+
+          <form class="auth-form" id="register-form">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" required />
+              <div class="error-message" id="name-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <div class="error-message" id="email-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+              <div class="error-message" id="phone-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Пароль</label>
+              <input type="password" id="password" name="password" required />
+              <div class="password-hint">
+                Пароль должен содержать не менее 8 символов
+              </div>
+              <div class="error-message" id="password-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Подтвердите пароль</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+              <div class="error-message" id="confirm-password-error"></div>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input
+                type="checkbox"
+                id="agree-terms"
+                name="agree-terms"
+                required
+              />
+              <label for="agree-terms"
+                >Я согласен с <a href="#">Условиями использования</a> и
+                <a href="#">Политикой конфиденциальности</a></label
+              >
+              <div class="error-message" id="terms-error"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary auth-btn">
+              Зарегистрироваться
+            </button>
+          </form>
+
+          <div class="auth-footer">
+            <p>Уже есть аккаунт? <a href="login.html">Войдите</a></p>
+
+            <div class="social-auth">
+              <p>Или войдите через:</p>
+              <div class="social-buttons">
+                <button class="social-btn google">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png"
+                    alt="Google"
+                  />
+                  <span>Google</span>
+                </button>
+                <button class="social-btn facebook">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+                    alt="Facebook"
+                  />
+                  <span>Facebook</span>
+                </button>
+                <button class="social-btn vk">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/2048px-VK_Compact_Logo_%282021-present%29.svg.png"
+                    alt="VK"
+                  />
+                  <span>VK</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">MF</div>
+            <div class="logo-text">Market<span>Flow</span></div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Контакты</a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2023 MarketFlow. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/registerScripts.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

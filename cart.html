@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина - MarketFlow</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cartStyles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <div class="logo-icon">MF</div>
+          <div class="logo-text">Market<span>Flow</span></div>
+        </div>
+
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul class="nav-links">
+            <li><a href="main.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="cart.html" class="active">Корзина</a></li>
+            <li><a href="orders.html">Заказы</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+          </ul>
+
+          <div class="mobile-menu-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Переключить тему"
+            >
+              <svg
+                class="sun-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="moon-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="auth-buttons">
+              <button class="btn btn-outline btn-login">Войти</button>
+              <button class="btn btn-primary btn-register">Регистрация</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Переключить тему"
+          >
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <div class="auth-buttons">
+            <button class="btn btn-outline btn-login">Войти</button>
+            <button class="btn btn-primary btn-register">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="cart-page">
+      <div class="container">
+        <h1 class="page-title">Ваша корзина</h1>
+
+        <div class="cart-container">
+          <div class="cart-items">
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="https://mi.by/upload/resize_cache/webp/iblock/a0b/0bujbbzkjpy3wq71rx7ivnbudiditpd1.webp"
+                  alt="Смартфон"
+                />
+              </div>
+              <div class="item-details">
+                <h3>Смартфон Xiaomi Redmi Note 12 Pro</h3>
+                <div class="item-meta">
+                  <span class="marketplace">Ozon</span>
+                  <span class="rating">★★★★☆ (124)</span>
+                </div>
+                <div class="item-actions">
+                  <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="qty-input" />
+                    <button class="qty-btn plus">+</button>
+                  </div>
+                  <button class="btn btn-outline remove-btn">Удалить</button>
+                </div>
+              </div>
+              <div class="item-price">
+                <span class="current-price">24 990 ₽</span>
+                <span class="old-price">29 990 ₽</span>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="https://imgproxy.onliner.by/Qu59lSK8s5UA6KLft2fOhNjmQIgpUbDe11pSI1gjWhE/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/OWJiYzY1Mzg3Njgw/OTI2NjM1MjQzMTIx/MWUzNmQ5NDUuanBl/Zw"
+                  alt="Наушники"
+                />
+              </div>
+              <div class="item-details">
+                <h3>Наушники Sony WH-CH720N</h3>
+                <div class="item-meta">
+                  <span class="marketplace">Wildberries</span>
+                  <span class="rating">★★★★★ (87)</span>
+                </div>
+                <div class="item-actions">
+                  <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="qty-input" />
+                    <button class="qty-btn plus">+</button>
+                  </div>
+                  <button class="btn btn-outline remove-btn">Удалить</button>
+                </div>
+              </div>
+              <div class="item-price">
+                <span class="current-price">12 490 ₽</span>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="https://imgproxy.onliner.by/_JyvqqV4KtdZGIWosrY4lbgs2OlGudL5Mp7fOb90XVo/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjM2ZmNiZTM2/MDE5NmQxOTQ1MzEz/ZjFiZTAxZGU3NTMu/anBlZw"
+                  alt="Часы"
+                />
+              </div>
+              <div class="item-details">
+                <h3>Умные часы Amazfit GTS 4</h3>
+                <div class="item-meta">
+                  <span class="marketplace">AliExpress</span>
+                  <span class="rating">★★★★☆ (56)</span>
+                </div>
+                <div class="item-actions">
+                  <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <input type="number" value="2" min="1" class="qty-input" />
+                    <button class="qty-btn plus">+</button>
+                  </div>
+                  <button class="btn btn-outline remove-btn">Удалить</button>
+                </div>
+              </div>
+              <div class="item-price">
+                <span class="current-price">15 999 ₽</span>
+                <span class="old-price">22 999 ₽</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-summary">
+            <h3>Ваш заказ</h3>
+            <div class="summary-row">
+              <span>Товары (4)</span>
+              <span>67 469 ₽</span>
+            </div>
+            <div class="summary-row">
+              <span>Скидка</span>
+              <span class="discount">-12 500 ₽</span>
+            </div>
+            <div class="summary-row">
+              <span>Доставка</span>
+              <span>Бесплатно</span>
+            </div>
+            <div class="summary-row total">
+              <span>Итого</span>
+              <span>54 969 ₽</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Оформить заказ</button>
+            <div class="promo-code">
+              <input type="text" placeholder="Промокод" />
+              <button class="btn btn-outline">Применить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-cart" style="display: none">
+          <div class="empty-icon">🛒</div>
+          <h3>Ваша корзина пуста</h3>
+          <p>Перейдите в каталог, чтобы добавить товары</p>
+          <a href="main.html" class="btn btn-primary">В каталог</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">MF</div>
+            <div class="logo-text">Market<span>Flow</span></div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Контакты</a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2023 MarketFlow. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/cartScripts.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

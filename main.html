@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarketFlow - Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css " />
+    <link rel="stylesheet" href="css/mainStyles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <div class="logo-icon">MF</div>
+          <div class="logo-text">Market<span>Flow</span></div>
+        </div>
+
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul class="nav-links">
+            <li><a href="main.html" class="active">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="orders.html">Заказы</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+          </ul>
+
+          <div class="mobile-menu-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Переключить тему"
+            >
+              <svg
+                class="sun-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="moon-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="auth-buttons">
+              <button class="btn btn-outline btn-login">Войти</button>
+              <button class="btn btn-primary btn-register">Регистрация</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Переключить тему"
+          >
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <div class="auth-buttons">
+            <button class="btn btn-outline btn-login">Войти</button>
+            <button class="btn btn-primary btn-register">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <div class="container">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Найти товар..."
+          />
+          <button class="search-btn">Поиск</button>
+        </div>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label for="category">Категория:</label>
+            <select id="category">
+              <option value="all">Все категории</option>
+              <option value="electronics">Электроника</option>
+              <option value="clothes">Одежда</option>
+              <option value="home">Дом и сад</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="price">Цена:</label>
+            <select id="price">
+              <option value="all">Любая</option>
+              <option value="low">До 5 000 ₽</option>
+              <option value="medium">5 000 - 20 000 ₽</option>
+              <option value="high">От 20 000 ₽</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="marketplace">Маркетплейс:</label>
+            <select id="marketplace">
+              <option value="all">Все</option>
+              <option value="ozon">Ozon</option>
+              <option value="wb">Wildberries</option>
+              <option value="aliexpress">AliExpress</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="catalog">
+      <div class="container">
+        <div class="sorting">
+          <span>Сортировка:</span>
+          <select id="sort">
+            <option value="popular">По популярности</option>
+            <option value="price-asc">По возрастанию цены</option>
+            <option value="price-desc">По убыванию цены</option>
+            <option value="rating">По рейтингу</option>
+          </select>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-badges">
+              <span class="badge discount">-15%</span>
+              <span class="badge marketplace">Ozon</span>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://mi.by/upload/resize_cache/webp/iblock/a0b/0bujbbzkjpy3wq71rx7ivnbudiditpd1.webp"
+                alt="Смартфон"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Смартфон Xiaomi Redmi Note 12 Pro</h3>
+              <div class="rating">★★★★☆ <span>(124)</span></div>
+              <div class="price">
+                <span class="current-price">24 990 ₽</span>
+                <span class="old-price">29 990 ₽</span>
+              </div>
+              <button
+                class="btn btn-primary"
+                onclick="window.location.href='product.html'"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badges">
+              <span class="badge marketplace">Wildberries</span>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://imgproxy.onliner.by/Qu59lSK8s5UA6KLft2fOhNjmQIgpUbDe11pSI1gjWhE/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/OWJiYzY1Mzg3Njgw/OTI2NjM1MjQzMTIx/MWUzNmQ5NDUuanBl/Zw"
+                alt="Наушники"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Наушники Sony WH-CH720N</h3>
+              <div class="rating">★★★★★ <span>(87)</span></div>
+              <div class="price">
+                <span class="current-price">12 490 ₽</span>
+              </div>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badges">
+              <span class="badge discount">-30%</span>
+              <span class="badge marketplace">AliExpress</span>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://imgproxy.onliner.by/_JyvqqV4KtdZGIWosrY4lbgs2OlGudL5Mp7fOb90XVo/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjM2ZmNiZTM2/MDE5NmQxOTQ1MzEz/ZjFiZTAxZGU3NTMu/anBlZw"
+                alt="Часы"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Умные часы Amazfit GTS 4</h3>
+              <div class="rating">★★★★☆ <span>(56)</span></div>
+              <div class="price">
+                <span class="current-price">15 999 ₽</span>
+                <span class="old-price">22 999 ₽</span>
+              </div>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badges">
+              <span class="badge marketplace">Ozon</span>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://shop.mts.by/upload/resize_cache/iblock/304/m6pc9uckg0urcyfn2qi4arwcaiyunvza/500_926_1/Vivobook_15_X1504_blue_1.jpg"
+                alt="Ноутбук"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Ноутбук ASUS VivoBook 15</h3>
+              <div class="rating">★★★☆☆ <span>(42)</span></div>
+              <div class="price">
+                <span class="current-price">54 990 ₽</span>
+              </div>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badges">
+              <span class="badge discount">-20%</span>
+              <span class="badge marketplace">Wildberries</span>
+            </div>
+            <div class="product-image">
+              <img
+                src="data:image/jpeg;base64,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VzwRj7q5YnXr54IoTsx+XZLm5UJ2f4YDnzVzTdfhiVTxwzz2IKS+3c2+JVCNn+F5/S5V8ceJ/DzhNVx8eFPl51XKop+/d2D9clTRw2C5u39detVlhLIevy88VQ+mrE7OdaCmvfcJZDjyELdWq4350xvQjZf9OWxUnsxOH3/ZQUl9h8W30HipllM2yyMs1FHN952E8yWeyOk6WBkMb96CUyhWeJHDS2dxpPCeCwkK6LCD2FhxCCWTPnnnjHiSC0TbVFhnRJnLP7qkS1PfeaakGe0xtI0uHmlnhFxlyFZAhT1AY84rZ2SGNg5vQSLPDmaXCg2LpnZb0XpWj2pugtJ/M8FreGmdy8H0XZHRYjYcJpc5xkGi8nnHBd86qdCCyQBDoXn3ojhcXEXDUBIDxxQbhFVEBERB4brZ2aWe1TfCPsIpF7ROG4/UyktxF65X072d2+zzPsDFYO/B/mA/kHv/AOOJX0ao9rs+mJTI2IPk20Ncw6L2ua4XhwIcNoNZ0HhrCxiINXP7keC7x1g6hOjEku0hrqvJ2nsodgBuog5n7QZ790vsfFV9rzrnPzmN4Xuo3ZbFF0/EqBG7No4u0kHlvac8RwmqafDWcK+RW+i9RLSM/BRInVG1DDgUGt0uZZH7FWk8yyM/IqY/q7aR3fP7LA7om0C9nH9MqIrE6VfzZZzVXffLETGCtdY4w/tn9qeVFZ7KIP7bqasruFFUZZ1G0eUslaDTcOBrz5rES4d13gc5hWmLmCL8Dj9iglA+ZzVs6Y3Nzz286lHFpGOo+hQRxmLiPt4qCT99WWtUaLtpPhuWH+IE94PCSuZGurmEGygR9IVvx+6zsctRDiykcmzUxlqGNDwQSLZZA8T4rXus4bgTtNOA9VsINoUhwYReEGrYCb9wwG5bTouwxI0RsKE0ue4ya0c0GtbDoPqxGtLg2EwkfNKniu0dTOprLG3SMjEIq7HZPLUgy9SuqMOww8HRnD+ZEy+lk7m+d5wA9MiICIiAiIgIiICpJVRBaWDJWmCMlkRBhNlbkFjd0fDPdHgpSINe/oeEe4PBYH9XYJ7g8Ft0QaCJ1TgHuBRYvUmAe6F6lEHjIvZ/APdCiRezaCcAvfIg5tF7MIRwCiROytmS6oiDkcTsmbkPBRn9kQyHguyog4qex9ZIXY3m4+K7MiDlNl7GYU/fiO3Er0vRPZvYoMj7PTObl7FEGGzWZkMaLGhoyAksyIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD//2Q=="
+                alt="Колонка"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Портативная колонка JBL Flip 6</h3>
+              <div class="rating">★★★★★ <span>(156)</span></div>
+              <div class="price">
+                <span class="current-price">9 990 ₽</span>
+                <span class="old-price">12 490 ₽</span>
+              </div>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badges">
+              <span class="badge marketplace">AliExpress</span>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://imgproxy.onliner.by/RgbpxtTITiEUB3cDS1mPjDFR70bH1jPsI75fv-1cK4w/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/NDg0N2ZkYzlmYmU4/YWU4ZmE1MDg2MDUz/ZjkzZmJiOWIuanBl/Zw"
+                alt="Фитнес-браслет"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Фитнес-браслет Huawei Band 7</h3>
+              <div class="rating">★★★★☆ <span>(78)</span></div>
+              <div class="price">
+                <span class="current-price">3 499 ₽</span>
+              </div>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <span>...</span>
+          <button class="page-btn">10</button>
+          <button class="page-btn next">Следующая →</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">MF</div>
+            <div class="logo-text">Market<span>Flow</span></div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Контакты</a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2023 MarketFlow. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/mainScripts.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас - MarketFlow</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aboutStyles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <div class="logo-icon">MF</div>
+          <div class="logo-text">Market<span>Flow</span></div>
+        </div>
+
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul class="nav-links">
+            <li><a href="main.html">Каталог</a></li>
+            <li><a href="about.html" class="active">О нас</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="orders.html">Заказы</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+          </ul>
+
+          <div class="mobile-menu-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Переключить тему"
+            >
+              <svg
+                class="sun-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="moon-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="auth-buttons">
+              <button class="btn btn-outline btn-login">Войти</button>
+              <button class="btn btn-primary btn-register">Регистрация</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Переключить тему"
+          >
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <div class="auth-buttons">
+            <button class="btn btn-outline btn-login">Войти</button>
+            <button class="btn btn-primary btn-register">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="about-page">
+      <section class="about-hero">
+        <div class="hero-carousel">
+          <div
+            class="carousel-slide active"
+            style="
+              background-image: linear-gradient(
+                  135deg,
+                  rgba(0, 0, 0, 0.6) 0%,
+                  rgba(20, 20, 20, 0.4) 100%
+                ),
+                url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: linear-gradient(
+                  135deg,
+                  rgba(0, 0, 0, 0.6) 0%,
+                  rgba(20, 20, 20, 0.4) 100%
+                ),
+                url('https://p2.zoon.by/preview/3mBfPv-RFY7qKe034_dq0Q/630x384x85/1/1/8/original_603403ccb78b665853160874_60364af4649df.jpg');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: linear-gradient(
+                  135deg,
+                  rgba(0, 0, 0, 0.6) 0%,
+                  rgba(20, 20, 20, 0.4) 100%
+                ),
+                url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          ></div>
+        </div>
+
+        <div class="container hero-content">
+          <h1>О компании MarketFlow</h1>
+          <p class="subtitle">
+            Наша миссия - сделать онлайн-покупки проще и выгоднее для каждого
+          </p>
+        </div>
+      </section>
+
+      <section class="about-story">
+        <div class="container">
+          <div class="section-title">
+            <h2>Наша история</h2>
+          </div>
+
+          <div class="story-content">
+            <div class="story-image">
+              <img
+                src="https://www.industriall-union.org/sites/default/files/styles/article_top_image_w1440/public/uploads/images/General-pics/White-Collar/white-collar.jpg?itok=IZYq_72e"
+                alt="Основатели MarketFlow"
+              />
+            </div>
+            <div class="story-text">
+              <p>
+                MarketFlow был основан в 2023 году как ответ на растущую
+                фрагментацию рынка электронной коммерции. Мы заметили, что
+                покупателям приходится тратить слишком много времени на
+                сравнение цен между разными маркетплейсами.
+              </p>
+              <p>
+                Наша команда энтузиастов поставила цель создать универсальное
+                решение, которое объединит все популярные торговые площадки в
+                одном удобном интерфейсе.
+              </p>
+              <p>
+                Сегодня MarketFlow помогает более чем 500,000 пользователей
+                экономить время и деньги при совершении покупок в интернете.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="section-title">
+            <h2>Почему выбирают MarketFlow</h2>
+            <p>
+              Мы объединяем все преимущества популярных маркетплейсов в одном
+              удобном сервисе
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Сравнение цен</h3>
+              <p>
+                Увидите разницу в стоимости одного и того же товара на разных
+                площадках, включая доставку.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">⏱️</div>
+              <h3>Экономия времени</h3>
+              <p>
+                Больше не нужно открывать десятки вкладок — все предложения
+                собраны в одном месте.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🔍</div>
+              <h3>Умный поиск</h3>
+              <p>
+                Находите одинаковые товары под разными названиями с помощью
+                нашей технологии.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">📉</div>
+              <h3>История цен</h3>
+              <p>
+                Отслеживайте динамику изменения стоимости и покупайте по самой
+                выгодной цене.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🛡️</div>
+              <h3>Защита от скама</h3>
+              <p>
+                Наша система анализирует отзывы со всех площадок, чтобы
+                предупредить о ненадежных продавцах.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">📱</div>
+              <h3>Удобный интерфейс</h3>
+              <p>
+                Адаптивный дизайн для комфортного использования на любом
+                устройстве.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <div class="container">
+          <div class="section-title">
+            <h2>Как это работает</h2>
+            <p>Всего 3 простых шага до выгодной покупки</p>
+          </div>
+
+          <div class="steps">
+            <div class="steps-line"></div>
+
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Найдите товар</h3>
+              <p>
+                Введите название товара в поисковую строку или выберите из
+                категорий.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Сравните предложения</h3>
+              <p>
+                Просмотрите все варианты с разных маркетплейсов в одной таблице.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Купите выгодно</h3>
+              <p>
+                Выберите лучший вариант и перейдите к покупке на выбранной
+                площадке.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <div class="section-title">
+            <h2>Наша команда</h2>
+            <p>Профессионалы, которые делают MarketFlow лучше каждый день</p>
+          </div>
+
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="imgs/Буж.jpg" alt="Алексей Петров" />
+              </div>
+              <h3>Бужинский Иван</h3>
+              <p class="position">CEO & Основатель</p>
+              <p class="bio">
+                15 лет опыта в e-commerce и технологических стартапах
+              </p>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="imgs/Буж.jpg" alt="Мария Иванова" />
+              </div>
+              <h3>Бужинский Иван</h3>
+              <p class="position">CTO</p>
+              <p class="bio">Эксперт в области big data и машинного обучения</p>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="imgs/Буж.jpg" alt="Дмитрий Смирнов" />
+              </div>
+              <h3>Бужинский Иван</h3>
+              <p class="position">Главный дизайнер</p>
+              <p class="bio">Создает удобные интерфейсы с 2015 года</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="company-contacts">
+        <div class="container">
+          <div class="contacts-wrapper">
+            <div class="company-photo">
+              <img
+                src="https://avatars.mds.yandex.net/get-altay/1974402/2a00000175576e92532c3c9dc371c4750ea3/L_height"
+                alt="Офис компании MarketFlow"
+              />
+            </div>
+
+            <div class="contacts-info">
+              <h2>Контакты</h2>
+              <div class="contact-item address">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <a
+                  href="https://yandex.by/maps/157/minsk/house/Zk4Ycw5iSEIAQFtpfXVyeH9gZw==/?ll=27.563896%2C53.902496&z=17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ул. Петруся Бровки 6, Минск</a
+                >
+              </div>
+
+              <div class="contact-item phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:+80172938856">8 017 293-88-56</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <h2>Начните экономить прямо сейчас</h2>
+          <p>
+            Присоединяйтесь к миллионам пользователей, которые делают умные
+            покупки с MarketFlow
+          </p>
+
+          <div class="cta-buttons">
+            <button class="btn btn-white">Зарегистрироваться</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">MF</div>
+            <div class="logo-text">Market<span>Flow</span></div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Контакты</a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2023 MarketFlow. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/aboutScripts.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

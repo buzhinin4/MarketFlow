@@ -1,0 +1,160 @@
+.auth-page {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+}
+
+.auth-container {
+  flex: 1;
+  max-width: 500px;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.auth-subtitle {
+  color: var(--text);
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 13px;
+  margin-top: 5px;
+  display: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.auth-footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.auth-footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.social-auth {
+  margin-top: 30px;
+}
+
+.social-auth p {
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.social-btn img {
+  width: 20px;
+}
+
+.social-btn.google {
+  border-color: #db4437;
+  color: #db4437;
+}
+
+.social-btn.facebook {
+  border-color: #4267b2;
+  color: #4267b2;
+}
+
+.social-btn.vk {
+  border-color: #0077ff;
+  color: #0077ff;
+}
+
+@media (max-width: 992px) {
+  .auth-page .container {
+    flex-direction: column;
+  }
+
+  .auth-container {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-container {
+    padding: 25px;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .social-btn {
+    justify-content: center;
+  }
+}
