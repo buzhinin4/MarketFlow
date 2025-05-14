@@ -134,7 +134,7 @@
   color: #0077ff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 762px) {
   .auth-page .container {
     flex-direction: column;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 486px) {
   .auth-container {
     padding: 25px;
   }
